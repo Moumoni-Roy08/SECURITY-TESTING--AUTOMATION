@@ -38,6 +38,9 @@ The security test was conducted using OWASP ZAP (Zed Attack Proxy) v2.16.0, an o
 
 The scan identified **11 vulnerabilities**, categorized as follows:  
 
+![Image](https://github.com/user-attachments/assets/f11dd428-9e89-4227-b49d-3ba65b67f5ef)
+
+
 | **Risk Level**  | **Number of Issues** |  
 |---------------|-----------------|  
 | 🟠 **Medium**       | 3               |  
