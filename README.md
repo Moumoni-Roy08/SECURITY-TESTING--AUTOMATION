@@ -15,23 +15,38 @@
 
 
 🛡️ Automated Security Testing Report using OWASP ZAP
+
 📌 Task Overview
+
 The objective of this task was to automate security testing for a web application using OWASP ZAP and generate a report detailing identified vulnerabilities and remediation steps. The assessment aimed to detect security weaknesses such as Cross-Site Scripting (XSS), Clickjacking, and CSRF vulnerabilities to enhance application security.
 
+
 🛠️ Solution
+
 The security test was conducted using OWASP ZAP (Zed Attack Proxy) v2.16.0, an open-source security tool designed for automated vulnerability scanning. The target application for this assessment was http://testphp.vulnweb.com, a purposely vulnerable web application used for penetration testing.
 
 🔄 Workflow:
+
 Target URL Scanned using OWASP ZAP.
+
 Vulnerabilities Identified and categorized by severity.
+
 Security Report Generated with remediation steps.
+
 🛠️ Tools Used
+
 OWASP ZAP v2.16.0 – Automated security scanner.
+
 Target URL: http://testphp.vulnweb.com (Test environment for security testing).
+
 ⚠️ Findings and Results
+
 The scan identified 11 vulnerabilities, categorized as follows:
 
-Risk Level	Number of Issues
+Risk Level	
+
+Number of Issues
+
 🟠 Medium	3
 🔵 Low	3
 ⚪ Informational	5
