@@ -85,15 +85,13 @@ Issue: The server exposes software version details, making it easier for attacke
 
 Fix: Disable version information in server configurations:
 
-# Apache
+## 📌 Other Informational Findings  
 
-ServerSignature Off
-
-ServerTokens Prod
-
-# Nginx
-
-server_tokens off;
+- **Authentication Request Identified** – Ensure authentication mechanisms are properly secured.  
+- **Charset Mismatch** – Align `Content-Type` charset in headers and meta tags.  
+- **Information Disclosure - Suspicious Comments** – Remove sensitive developer comments.  
+- **Modern Web Application Detection** – Review security best practices for modern web frameworks.  
+- **User Controllable HTML Element Attribute (Potential XSS)** – Validate and sanitize user input.  
 
 ✅ Conclusion
 
