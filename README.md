@@ -14,18 +14,16 @@
 
 
 
-🛡️ Automated Security Testing Report using OWASP ZAP
+# 🛡️ Automated Security Testing Report using OWASP ZAP
 
-📌 Task Overview
-
+## 📌 Task Overview
 The objective of this task was to automate security testing for a web application using OWASP ZAP and generate a report detailing identified vulnerabilities and remediation steps. The assessment aimed to detect security weaknesses such as Cross-Site Scripting (XSS), Clickjacking, and CSRF vulnerabilities to enhance application security.
 
+## 🛠️ Solution
 
-🛠️ Solution
+The security test was conducted using OWASP ZAP (Zed Attack Proxy) v2.16.0, an open-source security tool designed for automated vulnerability scanning. The target application for this assessment was testphp.vulnweb.com, a purposely vulnerable web application used for penetration testing.
 
-The security test was conducted using OWASP ZAP (Zed Attack Proxy) v2.16.0, an open-source security tool designed for automated vulnerability scanning. The target application for this assessment was http://testphp.vulnweb.com, a purposely vulnerable web application used for penetration testing.
-
-🔄 Workflow:
+## 🔄 Workflow:
 
 Target URL Scanned using OWASP ZAP.
 
@@ -33,23 +31,23 @@ Vulnerabilities Identified and categorized by severity.
 
 Security Report Generated with remediation steps.
 
-🛠️ Tools Used
+## 🛠️ Tools Used
 
 OWASP ZAP v2.16.0 – Automated security scanner.
 
-Target URL: http://testphp.vulnweb.com (Test environment for security testing).
+Target URL: testphp.vulnweb.com (Test environment for security testing).
 
-⚠️ Findings and Results
+## ⚠️ Findings and Results  
 
-The scan identified 11 vulnerabilities, categorized as follows:
+The scan identified **11 vulnerabilities**, categorized as follows:  
 
-Risk Level	
+| **Risk Level**  | **Number of Issues** |  
+|---------------|-----------------|  
+| 🟠 **Medium**       | 3               |  
+| 🔵 **Low**          | 3               |  
+| ⚪ **Informational** | 5               | 
 
-Number of Issues
 
-🟠 Medium	3
-🔵 Low	3
-⚪ Informational	5
 🔍 Key Vulnerabilities & Fixes
 🚨 1. Content Security Policy (CSP) Header Not Set
 Risk Level: Medium
@@ -77,7 +75,7 @@ Edit
 <input type="hidden" name="csrf_token" value="random_token_value">
 🚨 4. Server Leaks Version Information
 Risk Level: Low
-Issue: The server exposes its software version, making it easier for attackers to exploit vulnerabilities.
+Issue: The server exposes software version details, making it easier for attackers to exploit vulnerabilities.
 Fix: Disable version information in server configurations:
 bash
 Copy
